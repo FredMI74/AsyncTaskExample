@@ -40,6 +40,7 @@
 
             await Task.WhenAll(functionList);
 
+            Console.WriteLine("Functions results");
             foreach (Task<string> funcResult in functionList)
             {
                 Console.WriteLine(funcResult.Result);
